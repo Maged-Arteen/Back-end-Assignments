@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- & Styling Files -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap" rel="stylesheet">
+
+    <title>Back-end Assignment 1 & 2</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Assignment 1 </h1>
+            <div class="inner" id="q1">
+                <h3 class="title">Question -1 </h3>
+                <p class="q-title"> Create a function that calculates the sum of two given numbers.<br/>
+                    Input: 3, 5
+                    Output: 8
+                    </p>
+                    <button onclick="ShowCode(code)" class="btn">Show Code</button>
+                <div class="ans-area">
+                    <pre class="hide " id="code">
+                      <code >
+let input1 = document.getElementById('input-1');
+let input2 = document.getElementById('input-2');
+let sum = document.getElementById('sum');
+                        
+                        
+                        
+ function Sum( ) {
+   let param1= +input1.value;
+   let param2= +input2.value;
+      return (param1+param2);
+                }
+                        
+  function ShowResult(){ 
+    sum.innerText = `Sum : ${Sum()}`; 
+                       }
+                      </code>
+                    </pre>
+                </div>
+                <form>
+                <div class="input-block">
+                    <input type="number" id="input-1" required onkeyup="ShowResult()">
+                    <label for="input-1" class="label">First Number </label>
+
+                </div>
+                <div class="input-block">
+                    <input type="number" id="input-2" required onkeyup="ShowResult()">
+                    <label for="input-2" class="label">Second Number </label>
+                </div>
+                <label for="" class="result" id="sum"> </label>
+                </form>
+                <hr>
+            </div>
+
+            <div class="inner" id="q2">
+                <h3 class="title">Question -2 </h3>
+                <p class="q-title">  Write a function that checks if a number is prime (a number that can only be divided 
+                    by 1 and itself without any remainder). <br/>
+                    Input: 7 <br/>
+                    Output: true 
+                    </p>
+                    <button onclick="ShowCode(code2)" class="btn">Show Code</button>
+                <div class="ans-area">
+                    <pre class="hide " id="code2">
+                      <code >
+let IsPrime = document.querySelector('#input-3')
+ let Prime = document.getElementById('Prime');
+let code2 = document.querySelector('#code2')
+                        
+function CheckPrime(){ 
+ if (IsPrime.value % 2 > 0){
+      Prime.innerText = `True  ✔ Prime Number `; 
+ }else if (IsPrime.value == ""){ 
+   Prime.innerText = `Enter  a Number `; 
+                            
+  }
+   else{ 
+ Prime.innerText = `False ❌ Not Prime `; 
+                        
+    }
+  }
+                      </code>
+                    </pre>
+                </div>
+                <form>
+                <div class="input-block">
+                    <input type="number" id="input-3" required onkeyup="CheckPrime()">
+                    <label for="input-3" class="label">Enter Number </label>
+
+                </div>
+               
+                <label for="" class="result" id="Prime"> </label>
+                </form>
+                <hr />
+            </div>
+
+            <div class="inner" id="q3">
+                <h3 class="title">Question -3 </h3>
+                <p class="q-title"> Write a function to reverse a given string (using built in method).
+                    <br/> Input: "hello"<br/>
+                    Output: "olleh" 
+                   
+                    </p>
+                    <button onclick="ShowCode(code3)" class="btn">Show Code</button>
+                <div class="ans-area">
+                    <pre class="hide " id="code3">
+                      <code >
+let userText = document.querySelector('#input-4'); 
+let ReversedString = document.getElementById('reverse');
+let code3 = document.querySelector('#code3'); 
+                        
+function ReverseString() { 
+    let res = userText.value; 
+    let resReverse = [...res].reverse().join(""); 
+                            
+      ReversedString.innerText =` ${resReverse}`; 
+                        }
+                      </code>
+                    </pre>
+                </div>
+                <form>
+                <div class="input-block">
+                    <input type="text" id="input-4" required >
+                    <label for="input-4" class="label">Enter Text </label>
+
+                </div>
+               
+                <label for="" class="result" id="reverse"> </label>
+                </form>
+                <button onclick="ReverseString()" class="btn">Reverse Text</button>
+
+                <hr />
+            </div>
+
+            
+
+       
+
+    </div>
+
+    <!-- & Javascript Files -->
+    <script src="./main.js"></script>
+</body>
+</html>
