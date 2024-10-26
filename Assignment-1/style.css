@@ -59,8 +59,20 @@ form{
     transition: 0.5s ease-in-out;
     background-image: linear-gradient(to right , violet , transparent);
 }
+
+.ShortLink{ 
+    border: 1px solid rgb(24, 21, 24);
+    padding: 0.4rem 0.6rem;
+    
+    margin: 0.5rem 0rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    background-image: linear-gradient(to right , rgb(100, 202, 16) , transparent); 
+}
 .btn:hover{ 
-    background-image: linear-gradient(to left , violet , transparent);
+    background-image: linear-gradient(to left , rgb(192, 146, 192) , transparent);
 
 }
 /* * Form Start */
