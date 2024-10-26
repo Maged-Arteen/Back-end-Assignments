@@ -406,10 +406,73 @@ function CreateObject(){
 
 
 
-//^19
+//^19 >>
+function HasPropt(obj , prop){ 
+   
+    
+if (obj != null && Object.prototype.hasOwnProperty.call(obj , prop)){
+
+    console.log("Included");
+    
+}else{ 
+    console.log("Not Included");
+    
+}
+return obj != null && Object.prototype.hasOwnProperty.call(obj , prop)
+}
+   
+let stu = { 
+    fname : 'maged',
+}
+console.log(HasPropt(stu,"rer"));
+ 
 //^20
+function VowCount() {
+  let givingText=   window.prompt("Enter Text To Count Vowels Letters ")
+    const VowLetter = /[aeiou]/gi;
+    const matches = givingText.match(VowLetter); 
+    count = matches ? matches.length : 0
+    console.log("Vowels Count : "+count);
+    
+    return count; 
+  }
 //^21
-//^22
+function SplitText() {
+    let givingText= window.prompt("Enter Text To Split it ");
+    let splitT = givingText.split(' '); 
+    console.log(splitT);
+    }
+//^22 >> 
+function Calc() {
+    let fnum = +window.prompt("Enter FirstNumber")
+    let snum = +window.prompt("Enter Second Number")
+    let sign = window.prompt("Enter sign")
+    switch (sign) {
+        case '+':
+           console.log(  fnum + snum);
+           return
+           
+        case '-':
+          console.log(fnum - snum);
+          return
+          
+        case '*':
+          console.log(fnum * snum);
+          return
+          
+        case '/':
+            console.log(snum !== 0 ? fnum / num2 : "Divide by Zero ❌❌");
+            return
+            
+        default:
+            console.log("Error: No Valid Sign");
+            return
+            
+    }
+}
+
+
+
  
         
         
