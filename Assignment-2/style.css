@@ -1,0 +1,132 @@
+/* * CSS Global Settings Start  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Arima", system-ui;;
+}
+/* * CSS Global Settings End  */
+
+/* *Utilites Classes Start */
+.container{ 
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+.t-center{ 
+    text-align: center;
+}
+.title{ 
+    font-weight: bold;
+    color: rgb(102, 5, 102);
+}
+.q-title{ 
+    color: red;
+    font-weight: bold;
+    margin-left: 2rem;
+}
+
+.ans-area{
+    background-color: black;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin: 1rem 0;
+    color: #fff;
+    border: 1px solid black;
+   overflow-x:auto ;
+
+}
+form{ 
+   border-bottom: 2px solid #888;
+   margin-bottom: 2rem;
+}
+
+.hide{
+    display: none;
+}
+.btn{ 
+    border: 1px solid violet;
+    padding: 0.4rem 0.6rem;
+    letter-spacing: 0.2rem ;
+    margin: 0.5rem 0rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    background-image: linear-gradient(to right , violet , transparent);
+}
+
+.ShortLink{ 
+    border: 1px solid rgb(24, 21, 24);
+    padding: 0.4rem 0.6rem;
+    
+    margin: 0.5rem 0rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    background-image: linear-gradient(to right , rgb(100, 202, 16) , transparent); 
+}
+.btn:hover{ 
+    background-image: linear-gradient(to left , rgb(192, 146, 192) , transparent);
+
+}
+/* * Form Start */
+form{ 
+    margin-top: 2rem;
+    background-color: rgb(175, 201, 167);
+    padding: 1rem;
+    text-align: left;
+
+}
+form div { 
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+form div label{ 
+    position: absolute;
+    transition: 0.5s all;
+   font-size: 0.8rem;
+   color: #888;
+
+}
+input{ 
+    outline: none;
+    border: none;
+    padding: 0.2rem 0.5rem ;
+    border-top-left-radius: 5px ;
+    border-bottom-right-radius: 5px ;
+    align-items: left;
+    height: 2rem;
+    margin-bottom: 0.5rem;
+    width: 80%;
+    /* pointer-events: none; */
+ 
+}
+
+input:hover ~ .label{ 
+top: -10px;
+
+
+}
+
+input:valid ~ .label{ 
+    top: -10px;
+
+}
+
+.result{ 
+    font-weight: bold;
+    color: blue;
+    font-size: 2rem;
+}
+/* * Form End */
+/* *Utilites Classes End */
+
